@@ -1,13 +1,13 @@
 I was tired of seeing single, isolated systems that weren't attached to any part of their home nation. Pre jump drives, this is an untenable situation. How can the starbase get supplies if all connecting hyperlanes are controlled by someone who doesn't let you use them? They would effectively be sieging the system, and eventually your people would die. Then, the person who controlled the neighboring systems can just take the system, claiming that you have no claim to it as you have no people there.
 
-So now, every 2 years, isolated systems will be lost.
+So now, every 5 years, isolated systems will be lost.
 
 
 [hr][/hr]
 
 [h1]Notes:[/h1]
 
-- Every 2 years, any isolated systems will be lost.
+- Every 5 years, any isolated systems will be lost.
 
 - If you have a planet in an isolated system, it will not be lost. Reasoning: the planet can feasibly supply the starbase with supplies.
 
@@ -16,6 +16,8 @@ So now, every 2 years, isolated systems will be lost.
 - If you have open borders with someone who is bordering the system, the system will not be lost.
 
 - This will only happen to isolated systems. Enclaves of two or more systems are safe (for now).
+
+- Why 5 years? First, there is some very slight (2-3 seconds with my 200 mod collection) lag that comes with the event, so I don't want to run it often. Second, I think starbases would have enough provisions to last a few years. Maybe not 5, but I don't think it's unreasonable. Third, I don't think the event really needs to be run more often than that. This should sufficiently clean up the map over time.
 
 
 [hr][/hr]

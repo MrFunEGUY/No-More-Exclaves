@@ -1,5 +1,5 @@
 # this = country
-on_bi_yearly_pulse_country = {
+on_five_year_pulse_country = {
 	events = {
 		nme.1000 			# Remove disconnected exclaves
 	}
