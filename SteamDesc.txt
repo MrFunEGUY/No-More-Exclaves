@@ -7,17 +7,27 @@ So now, every 5 years, isolated systems will be lost.
 
 [h1]Notes:[/h1]
 
-- Every 5 years, any isolated systems will be lost.
+- An exclave is defined as  a system that shares no hyperlane/l-gate/gateway/wormhole connections with any other part of your territory, or any unclaimed territory. So you can still rush to get chokepoints, because there will be unclaimed territory connecting to it.
 
-- If you have a planet in an isolated system, it will not be lost. Reasoning: the planet can feasibly supply the starbase with supplies.
+- Every 5 years, any exclaves will be lost.
+
+- If you have a planet in an exclave, it will not be lost. Reasoning: the planet can feasibly supply the starbase with supplies.
 
 - If you have any gateways or wormholes in the system that lead back to your territory, the system will not be destroyed.
 
 - If you have open borders with someone who is bordering the system, the system will not be lost.
 
-- This will only happen to isolated systems. Enclaves of two or more systems are safe (for now).
+- This will only happen to single isolated systems. Exclaves of two or more systems are safe (for now).
 
-- Why 5 years? First, there is some very slight (2-3 seconds with my 200 mod collection) lag that comes with the event, so I don't want to run it often. Second, I think starbases would have enough provisions to last a few years. Maybe not 5, but I don't think it's unreasonable. Third, I don't think the event really needs to be run more often than that. This should sufficiently clean up the map over time.
+- Why 5 years? First, I think starbases would have enough provisions to last a few years. Maybe not 5, but I don't think it's unreasonable. Second, I don't think the event really needs to be run more often than that. This should sufficiently clean up the map over time.
+
+
+[hr][/hr]
+
+[h1]Patches:[/h1]
+
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2734008930]Japanese Localisation Patch[/url], by Dryus. Thank you!
+- This mod should complement his mod, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2701584796]Enclave Adjustment[/url], quite well.
 
 
 [hr][/hr]
