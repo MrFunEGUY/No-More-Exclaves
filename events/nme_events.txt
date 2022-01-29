@@ -21,7 +21,7 @@ country_event = {
 				    limit = {
 				        OR = {
 				            NOT = { exists = space_owner }
-				            space_owner = { is_same_empire = root }
+				            is_owned_by = root
 				            space_owner = { NOT = { has_closed_borders = root  } }
 				        }
 				    }
@@ -47,7 +47,7 @@ country_event = {
 		                limit = {
 		                    OR = {
 		                        NOT = { exists = space_owner }
-		                        space_owner = { is_same_empire = root }
+		                        is_owned_by = root
 		                        space_owner = { NOT = { has_closed_borders = root  } }
 		                    }
 		                }

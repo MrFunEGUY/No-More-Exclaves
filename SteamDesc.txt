@@ -26,8 +26,9 @@ So now, every 5 years, isolated systems will be lost.
 
 [h1]Patches:[/h1]
 
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2734008930]Japanese Localisation Patch[/url], by Dryus. Thank you!
-- This mod should complement his mod, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2701584796]Enclave Adjustment[/url], quite well.
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2734008930]Japanese Localisation Patch[/url], by [url=https://steamcommunity.com/profiles/76561198151381786]Dryus[/url]. Thank you! This mod should complement his mod, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2701584796]Enclave Adjustment[/url], quite well.
+
+- German translation by [url=https://steamcommunity.com/id/Lucanoria]Lucanoria[/url]. Thank you!
 
 
 [hr][/hr]
