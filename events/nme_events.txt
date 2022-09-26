@@ -1,76 +1,137 @@
 namespace = nme
 
-# Get rid of rebels of
-# effect this.solar_system.space_owner = { save_global_event_target_as = test_target }
 country_event = {
     id = nme.1000
 	is_triggered_only = yes	
 	hide_window = yes
 
 	trigger = {
-		any_system_within_border = {
-			NOR = {
-				any_system_planet = {
-					has_owner = yes
-					owner = { is_primitive = no }
-				}
-				closest_system = {
-				    use_bypasses = yes
-				    min_steps = 1
-				    max_steps = 1
-				    limit = {
-				        OR = {
-				            NOT = { exists = space_owner }
-				            is_owned_by = root
-				            space_owner = { NOT = { has_closed_borders = root  } }
-				        }
-				    }
-				    exists = this
-				}
-			}
-		}
+		is_country_type_with_subjects = yes
+	}
+	
+	immediate = {
+		# So this doesnt run for all countries at the same time, for performance
+		country_event = { id = nme.1010 days = 2 random = 358 }
+	}
+}
+
+country_event = {
+    id = nme.1010
+	is_triggered_only = yes	
+	hide_window = yes
+
+	trigger = {
+		is_country_type_with_subjects = yes
 	}
 	
 	immediate = {
 
-		every_system_within_border = {
-		    limit = {
-		        NOR = {
-		        	any_system_planet = {
-                        exists = owner
-                        owner = { is_primitive = no }
-                    }
-		            closest_system = {
-		                use_bypasses = yes
-		                min_steps = 1
-		                max_steps = 1
-		                limit = {
-		                    OR = {
-		                        NOT = { exists = space_owner }
-		                        is_owned_by = root
-		                        space_owner = { NOT = { has_closed_borders = root  } }
-		                    }
-		                }
-		                exists = this
-		            }
-		        }  
-		    }
-		    starbase = {
-		        fleet = {
-		            destroy_fleet = this
-		        }
-		    }
-		    create_message = {
-		    	type = NME_exclave_lost_message
-		    	localization = NME_exclave_lost_message_desc
-		    	days = 30
-		    	target = this # the Go To
-		    	variable = {
-		    		type = name
-		    		localization = SYSTEM
-		    		scope = this
-		    	}
-		    }
+		capital_scope.solar_system = {
+			create_fleet = {
+				effect = {
+					set_owner = root
+					create_ship = {
+						name = "Lonely System Check Ship"
+						design = "NAME_AI_Constructor"
+						graphical_culture = owner
+					}
+					set_location = {
+						target = root.capital_scope
+						distance = 10
+						angle = random
+					}
+					save_event_target_as = access_checker_fleet
+				}
+			}
 		}
+
+		every_system_within_border = {
+			limit = {
+				is_capital_system = no
+				NOT = { exists = sector }
+				NOT = { has_star_flag = nme_recently_built }
+				NOT = { any_system_planet = { is_owned_by = root } }
+				event_target:access_checker_fleet = { NOT = { can_access_system = prev } }
+			}
+			system_event = { id = nme.2000 days = 1 random = 1800 }
+		}
+	}
+
+	after = {		
+		event_target:access_checker_fleet = { destroy_fleet = this }
 	}	
+}
+
+system_event = {
+    id = nme.2000
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = { 
+		exists = owner
+		owner = { is_at_war = no }
+		is_capital_system = no
+		NOT = { exists = sector }
+		NOT = { has_star_flag = nme_recently_built }
+		NOT = { any_system_planet = { is_owned_by = root } }
+	}
+	
+	immediate = {
+
+		owner = { save_event_target_as = exclave_owner }
+
+		owner.capital_scope.solar_system = {
+			create_fleet = {
+				effect = {
+					set_owner = event_target:exclave_owner
+					create_ship = {
+						name = "Lonely System Check Ship"
+						design = "NAME_AI_Constructor"
+						graphical_culture = owner
+					}
+					set_location = {
+						target = event_target:exclave_owner.capital_scope
+						distance = 10
+						angle = random
+					}
+					save_event_target_as = access_checker_fleet
+				}
+			}
+		}
+
+		if = {
+			limit = { event_target:access_checker_fleet = { NOT = { can_access_system = root } } }
+			starbase.fleet = { destroy_fleet = this }
+			create_message = {
+				type = NME_exclave_lost_message
+				localization = NME_exclave_lost_message_desc
+				days = 30
+				target = this # the exclaved system
+				variable = {
+					type = name
+					localization = SYSTEM
+					scope = this
+				}
+			}
+		}
+	}
+
+	after = {
+		event_target:access_checker_fleet = { destroy_fleet = this }
+	}
+}
+
+ship_event = {
+    id = nme.3000
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = { is_country_type_with_subjects = yes } 
+		solar_system = { NOT = { has_star_flag = nme_recently_built } }
+	}
+	
+	immediate = {
+		set_timed_star_flag = { flag = nme_recently_built days = 2520 }
+	}
 }

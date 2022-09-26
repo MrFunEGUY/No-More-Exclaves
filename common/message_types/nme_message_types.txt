@@ -14,9 +14,10 @@
 message_type = {
 	key = "NME_exclave_lost_message"
 	icon = "GFX_message_no_access"
-	icon_frame = 1
+	icon_frame = 2
 
 	name = "NME_exclave_lost_message_title"
 	sound = "notification"
 	ping = "ping_notification_red"
+	auto_opens = others
 }
