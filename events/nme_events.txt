@@ -22,6 +22,13 @@ country_event = {
 
 	trigger = {
 		is_country_type_with_subjects = yes
+		any_system_within_border = {
+			is_capital_system = no
+			NOT = { exists = sector }
+			NOT = { has_star_flag = has_any_ehof } # EHOF Compat
+			NOT = { has_star_flag = nme_recently_built }
+			NOT = { any_system_planet = { is_owned_by = root } }
+		}
 	}
 	
 	immediate = {
@@ -49,6 +56,7 @@ country_event = {
 			limit = {
 				is_capital_system = no
 				NOT = { exists = sector }
+				NOT = { has_star_flag = has_any_ehof } # EHOF Compat
 				NOT = { has_star_flag = nme_recently_built }
 				NOT = { any_system_planet = { is_owned_by = root } }
 				event_target:access_checker_fleet = { NOT = { can_access_system = prev } }
@@ -72,6 +80,7 @@ system_event = {
 		owner = { is_at_war = no }
 		is_capital_system = no
 		NOT = { exists = sector }
+		NOT = { has_star_flag = has_any_ehof }
 		NOT = { has_star_flag = nme_recently_built }
 		NOT = { any_system_planet = { is_owned_by = root } }
 	}
