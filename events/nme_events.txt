@@ -25,9 +25,12 @@ country_event = {
 		any_system_within_border = {
 			is_capital_system = no
 			NOT = { exists = sector }
-			NOT = { has_star_flag = has_any_ehof } # EHOF Compat
 			NOT = { has_star_flag = nme_recently_built }
 			NOT = { any_system_planet = { is_owned_by = root } }
+			OR = { # EHOF Compat
+				NOT = { has_global_flag = gigastructures_enabled }
+				has_any_ehof = no
+			}
 		}
 	}
 	
@@ -56,9 +59,12 @@ country_event = {
 			limit = {
 				is_capital_system = no
 				NOT = { exists = sector }
-				NOT = { has_star_flag = has_any_ehof } # EHOF Compat
 				NOT = { has_star_flag = nme_recently_built }
 				NOT = { any_system_planet = { is_owned_by = root } }
+				OR = { # EHOF Compat
+					NOT = { has_global_flag = gigastructures_enabled }
+					has_any_ehof = no
+				}
 				event_target:access_checker_fleet = { NOT = { can_access_system = prev } }
 			}
 			system_event = { id = nme.2000 days = 1 random = 1800 }
@@ -80,9 +86,12 @@ system_event = {
 		owner = { is_at_war = no }
 		is_capital_system = no
 		NOT = { exists = sector }
-		NOT = { has_star_flag = has_any_ehof }
 		NOT = { has_star_flag = nme_recently_built }
 		NOT = { any_system_planet = { is_owned_by = root } }
+		OR = { # EHOF Compat
+			NOT = { has_global_flag = gigastructures_enabled }
+			has_any_ehof = no
+		}
 	}
 	
 	immediate = {
@@ -136,11 +145,11 @@ ship_event = {
 	hide_window = yes
 
 	trigger = {
-		from = { is_country_type_with_subjects = yes } 
+		owner = { is_country_type_with_subjects = yes } 
 		solar_system = { NOT = { has_star_flag = nme_recently_built } }
 	}
 	
 	immediate = {
-		set_timed_star_flag = { flag = nme_recently_built days = 2520 }
+		solar_system = { set_timed_star_flag = { flag = nme_recently_built days = 2520 } }
 	}
 }
