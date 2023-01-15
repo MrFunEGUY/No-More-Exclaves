@@ -152,6 +152,6 @@ ship_event = {
 	}
 	
 	immediate = {
-		solar_system = { set_timed_star_flag = { flag = nme_recently_built days = 2520 } }
+		solar_system = { set_timed_star_flag = { flag = nme_recently_built years = 7 } }
 	}
 }

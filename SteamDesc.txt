@@ -1,32 +1,30 @@
 I was tired of seeing single, isolated systems that weren't attached to any part of their home nation. Pre jump drives, this is an untenable situation. How can the starbase get supplies if all connecting hyperlanes are controlled by someone who doesn't let you use them? They would effectively be sieging the system, and eventually your people would die. Then, the person who controlled the neighboring systems can just take the system, claiming that you have no claim to it as you have no people there.
 
-So now, every 5 years, isolated systems will be lost.
+So now, exclaves will last for, at most, 10 years.
 
 
 [hr][/hr]
 
 [h1]Notes:[/h1]
 
-- An exclave is defined as  a system that shares no hyperlane/l-gate/gateway/wormhole connections with any other part of your territory, or any unclaimed territory. So you can still rush to get chokepoints, because there will be unclaimed territory connecting to it.
-
-- Every 5 years, any exclaves will be lost.
+- An exclave is defined as any system that is not in a sector and that cannot access your capital system.
 
 - If you have a planet in an exclave, it will not be lost. Reasoning: the planet can feasibly supply the starbase with supplies.
 
-- If you have any gateways or wormholes in the system that lead back to your territory, the system will not be destroyed.
+- Exclaves will be lost within 1-10 years of being isolated.
 
-- If you have open borders with someone who is bordering the system, the system will not be lost.
+- Exclaves will not be lost during war. This is to avoid losing systems that are only being blocked from accessing the capital due to occupied systems.
 
-- This will only happen to single isolated systems. Exclaves of two or more systems are safe (for now).
+- Exclave status will not be checked for the first 7 years after an outpost is built. This is to give you time to colonize a planet and create a sector.
 
-- Why 5 years? First, I think starbases would have enough provisions to last a few years. Maybe not 5, but I don't think it's unreasonable. Second, I don't think the event really needs to be run more often than that. This should sufficiently clean up the map over time.
+- Why 10 years? First, it feels more organic this way, as opposed to having them all disappear at the same time. Second, I think starbases would have enough provisions to last a few years. Maybe not 10, but I don't think it's unreasonable. Third, I don't think the event really needs to be run more often than that. This should sufficiently clean up the map over time.
 
 
 [hr][/hr]
 
-[h1]Patches:[/h1]
+[h1]Localisations:[/h1]
 
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2734008930]Japanese Localisation Patch[/url], by [url=https://steamcommunity.com/profiles/76561198151381786]Dryus[/url]. Thank you! This mod should complement his mod, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2701584796]Enclave Adjustment[/url], quite well.
+- Japanese Translation, by [url=https://steamcommunity.com/profiles/76561198151381786]Dryus[/url]. Thank you! This mod should complement his mod, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2701584796]Enclave Adjustment[/url], quite well.
 
 - German translation by [url=https://steamcommunity.com/id/Lucanoria]Lucanoria[/url]. Thank you!
 
@@ -65,4 +63,4 @@ So now, every 5 years, isolated systems will be lost.
 
 For the best support, find me at [b]#mrfuneguys-mods[/b] on the Stellaris Modding Den Discord:
 
-[url=https://discord.gg/REvVK2fjJF][img]https://i.imgur.com/4Und3QN.png[/img][/url]
+[url=https://discord.gg/REvVK2fjJF][img]https://i.imgur.com/jZkBbLR.png[/img][/url]

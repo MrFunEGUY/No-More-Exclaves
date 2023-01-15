@@ -4,5 +4,5 @@ tags={
 	"Diplomacy"
 }
 name="No More Exclaves"
-supported_version="3.5.*"
+supported_version="3.6.*"
 remote_file_id="2732567565"
