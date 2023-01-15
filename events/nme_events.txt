@@ -139,13 +139,15 @@ system_event = {
 	}
 }
 
+#This = ship (starbase)
+#From = owner country
 ship_event = {
     id = nme.3000
 	is_triggered_only = yes
 	hide_window = yes
 
 	trigger = {
-		owner = { is_country_type_with_subjects = yes } 
+		# from = { is_country_type_with_subjects = yes } # Causes errors causes says is planet scope??
 		solar_system = { NOT = { has_star_flag = nme_recently_built } }
 	}
 	
