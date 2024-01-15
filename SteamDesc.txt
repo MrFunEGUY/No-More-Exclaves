@@ -1,23 +1,23 @@
 I was tired of seeing single, isolated systems that weren't attached to any part of their home nation. Pre jump drives, this is an untenable situation. How can the starbase get supplies if all connecting hyperlanes are controlled by someone who doesn't let you use them? They would effectively be sieging the system, and eventually your people would die. Then, the person who controlled the neighboring systems can just take the system, claiming that you have no claim to it as you have no people there.
 
-So now, exclaves will last for, at most, 10 years.
+So now, exclaves will last for, at most, 15 years (excluding when at war).
 
 
 [hr][/hr]
 
 [h1]Notes:[/h1]
 
-- An exclave is defined as any system that is not in a sector and that cannot access your capital system.
+- An exclave is defined as any system that is not in a sector and that cannot access any sector capitals.
 
-- If you have a planet in an exclave, it will not be lost. Reasoning: the planet can feasibly supply the starbase with supplies.
+- If you have a planet in an exclave, it will not be lost. Regardless, just make it a sector like you should anyway.
 
-- Exclaves will be lost within 1-10 years of being isolated.
+- Exclaves will be lost within 1-15 years of being isolated.
 
-- Exclaves will not be lost during war. This is to avoid losing systems that are only being blocked from accessing the capital due to occupied systems.
+- Exclaves will not be lost during war. This is to avoid losing systems that are only being blocked from accessing a sector capital due to occupation.
 
 - Exclave status will not be checked for the first 7 years after an outpost is built. This is to give you time to colonize a planet and create a sector.
 
-- Why 10 years? First, it feels more organic this way, as opposed to having them all disappear at the same time. Second, I think starbases would have enough provisions to last a few years. Maybe not 10, but I don't think it's unreasonable. Third, I don't think the event really needs to be run more often than that. This should sufficiently clean up the map over time.
+- Why 15 years? First, it feels more organic this way, as opposed to having them all disappear at the same time. Second, I think starbases would have enough provisions to last a few years. Maybe not 15, but I don't think it's unreasonable. Third, I don't think the event really needs to be run more often than that. This should sufficiently clean up the map over time.
 
 
 [hr][/hr]
@@ -35,8 +35,6 @@ So now, exclaves will last for, at most, 10 years.
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2434790082]- Civil Wars[/url]
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2158334880]- More Authorities[/url]
-
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2114559224]- Viable Feudalism and Imperialism - Empire Federation[/url]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2491283817]- Useful Heirs[/url]
@@ -47,9 +45,13 @@ So now, exclaves will last for, at most, 10 years.
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2452302093]- We Require Borders[/url]
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2183551683]- Vassals Expanded and Reworked - FunEFork[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2949463581]- Ethics and Civics Alternative - FunEFork[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2956036384]- Galactic Bank - FunEFork[/url]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2177145527]- Intervene: Help Friendly Nations - FunEFork[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2183551683]- Vassals Expanded and Reworked - FunEFork[/url]
 
 ===
 
