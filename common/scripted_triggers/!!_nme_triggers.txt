@@ -1,7 +1,6 @@
 cohesive_system = {	has_star_flag = cohesive_system }
 giga_is_any_ehof_non_flag = {
-	optimize_memory
-	always = no
+		always = no
 }
 
 giga_has_an_active_ehof = {
