@@ -1,4 +1,4 @@
-﻿l_english:
+﻿# l_english:
 # l_spanish:
 # l_german:
 # l_french:
@@ -6,7 +6,7 @@
 # l_russian:
 # l_braz_por:
 # l_simp_chinese:
-# l_korean:
+l_korean:
 # l_japanese:
 
  NME_exclave_lost_message_title:0 "System Lost"

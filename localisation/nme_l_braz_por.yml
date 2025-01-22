@@ -8,5 +8,5 @@ l_braz_por:
 # l_simp_chinese:
 
  NME_exclave_lost_message_title:0 "System Lost"
- NME_exclave_lost_message_desc:0 "Due to our continued inability to access the §Y$SYSTEM$§! system, we have lost control of the exclave."
+ NME_exclave_lost_message_desc:0 "Due to our continued inability to access the exclave of §Y$SYSTEM$§!, we have lost control of the system."
  
